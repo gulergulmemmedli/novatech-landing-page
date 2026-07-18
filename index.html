@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaTech — Rəqəmsal Dünyada Sizin Güvənli Tərəfdaşınız</title>
+  <meta name="description" content="NovaTech — biznesiniz üçün innovativ web və mobil həllər. 10 ildən artıq təcrübə, 150+ uğurlu layihə.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Əsas məzmuna keç</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">NovaTech</a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Menyunu aç/bağla">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Əsas naviqasiya">
+        <ul>
+          <li><a href="#about">Haqqımızda</a></li>
+          <li><a href="#gallery">Qalereya</a></li>
+          <li><a href="#contact">Əlaqə</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <h1 id="hero-heading">Rəqəmsal Dünyada Sizin Güvənli Tərəfdaşınız</h1>
+        <p class="hero-subtitle">
+          Biz biznesiniz üçün <span class="accent">innovativ</span> web və mobil həlləri sıfırdan hazırlayırıq.
+        </p>
+        <a href="#contact" class="btn btn-primary">Bizimlə Əlaqə</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section-title">Haqqımızda</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Niyə bizi seçməlisiniz?</h3>
+            <p>
+              10 ildən artıq təcrübəmizlə layihələrinizi vaxtında və yüksək keyfiyyətlə təhvil
+              veririk. Sürət, təhlükəsizlik və şəffaflıq bizim əsas prinsiplərimizdir.
+            </p>
+          </div>
+
+          <div class="stats" role="list">
+            <div class="stat-card" role="listitem">
+              <span class="stat-number">150+</span>
+              <span class="stat-label">Uğurlu Layihə</span>
+            </div>
+            <div class="stat-card" role="listitem">
+              <span class="stat-number">99%</span>
+              <span class="stat-label">Müştəri Məmnuniyyəti</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading" class="section-title">Layihələrimiz (Qalereya)</h2>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-item--large">
+            <img src="https://picsum.photos/id/180/900/650" alt="Laptop with code editor on a desk"  width="900" height="650">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://picsum.photos/id/60/700/500" alt="comLaptop screen showing programming codeputer" width="700" height="500">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://picsum.photos/id/1071/700/500" alt="cHand pinning notes on a project planning board"  width="700" height="500">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section-title">Bizimlə Əlaqə</h2>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fullName">Ad və Soyad <span aria-hidden="true">*</span></label>
+            <input type="text" id="fullName" name="fullName" placeholder="Əli Məmmədov" required aria-required="true">
+            <span class="error-message" id="fullName-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Elektron poçt <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="eli.memmedov@example.az" required aria-required="true">
+            <span class="error-message" id="email-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mesajınız <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Layihəniz barədə qısa məlumat..." required aria-required="true"></textarea>
+            <span class="error-message" id="message-error" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Göndər</button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> NovaTech. Bütün hüquqlar qorunur.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
