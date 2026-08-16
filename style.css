@@ -328,6 +328,7 @@ section {
 }
  
 .gallery-item {
+  position: relative;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -342,6 +343,21 @@ section {
  
 .gallery-item:hover img {
   transform: scale(1.04);
+}
+ 
+.gallery-caption {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 2;
+  background: rgba(26, 29, 41, 0.85);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
 }
  
 /* ==========================================================================
